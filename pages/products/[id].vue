@@ -37,6 +37,10 @@ definePageMeta({
     to.meta.pageTransition.name = +to.params.id > +from.params.id ? 'slide-left' : 'slide-right'
   }
 })
+
+if (!product.value) {
+  throw createError({ statusCode: 404, statusMessage: "Product not found!", fatal: true })
+}
 </script>
 
 <style scoped>

@@ -19,6 +19,15 @@ definePageMeta({
     to.meta.pageTransition.name = +to.params.id > +from.params.id ? 'slide-left' : 'slide-right'
   }
 })
+
+useHead({
+  title: "Nuxt Gogo | Home",
+  meta: [
+    { name: "description", content: "Home page!" },
+    { name: "author", content: "Ogabek" },
+    { name: "linkTelegram", content: "@fullstackmaster" },
+  ],
+})
 </script>
 
 <style scoped>

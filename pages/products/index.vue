@@ -2,8 +2,8 @@
   <div>
     <h2 class="p-5">All Products</h2>
     <hr>
-    <!-- <Loader v-if="pending" /> -->
-    <LazyLoader v-if="pending" />
+    <Loader v-if="pending" />
+    <!-- <LazyLoader v-if="pending" /> -->
     <div class="grid grid-cols-4 gap-5 p-5">
       <div v-for="(product, idx) in products" :key="idx">
         <ProductCard :product="product"/>
