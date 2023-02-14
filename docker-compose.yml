@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  nuxt-gogo:
+    image: nuxt-gogo:latest
+    restart: always
+    hostname: nuxt-gogo
+    container_name: nuxt-gogo
+    ports:
+      - "3003:3000"

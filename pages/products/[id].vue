@@ -41,6 +41,15 @@ definePageMeta({
 if (!product.value) {
   throw createError({ statusCode: 404, statusMessage: "Product not found!", fatal: true })
 }
+
+useHead({
+  title: "Nuxt Gogo | " + product?.title,
+  meta: [
+    { name: "description", content: product?.description },
+    { name: "author", content: "Ogabek" },
+    { name: "linkTelegram", content: "@fullstackmaster" },
+  ],
+})
 </script>
 
 <style scoped>
