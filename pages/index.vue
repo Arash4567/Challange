@@ -1,14 +1,12 @@
 <template>
   <div>
-    <h2>iNDEX</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus repellendus ipsam
-      perferendis vitae. Quibusdam error vitae unde, sint assumenda fugiat perferendis iure beatae, repellendus facere
-      placeat dolores id! Eos necessitatibus veritatis fuga saepe sunt. Expedita laudantium eius magnam vero culpa
-      nostrum sapiente ut architecto!</p>
+    <h2>Drag and Drop</h2>
+    <DragAndDrop/>
   </div>
 </template>
 
 <script setup>
+import DragAndDrop from '~/components/DragAndDrop.vue'
 definePageMeta({
   layout: 'default',
   pageTransition: {

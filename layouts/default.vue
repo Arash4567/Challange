@@ -1,19 +1,12 @@
 <template>
   <div>
-    <Navbar/>
-    <!-- output the page content -->
-    <div>
-      <slot />
-    </div>
+    <slot />
   </div>
-
 </template>
 
 <script setup>
-import Navbar from '~~/components/Navbar.vue';
 
 
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
